@@ -8,7 +8,7 @@
     --primary-color: #050505;
     --secondary-color: #65676b;
     --active-color: #1b74e4;
-    --hover-color: #ececee;
+    --hover-color: #e4e4e9;
     --primary-bg: #ffffff;
     --secondary-bg: #f0f2f5;
     --tertiary-bg: #e4e6eb;
@@ -23,7 +23,7 @@
 }
 body, html{
     color: var(--primary-color);
-    background-color: var(--primary-bg);
+    background-color: var(--secondary-bg);
     font-size: 14px;
     font-weight: 400;
     font-family: var(--primary-font);
@@ -32,7 +32,7 @@ body, html{
 img{
     display: block;
 }
-a{
+a, span{
     display: inline-block;
 }
 
@@ -53,7 +53,7 @@ a{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px 18px;
+    padding: 5px 18px 0 18px;
 }
 
 /**header left**/
@@ -61,6 +61,7 @@ a{
     display: flex;
     align-items: center;
     column-gap: 10px;
+    padding-bottom: 3px;
 }
 .logo{
     width: 40px;
@@ -72,7 +73,7 @@ a{
     max-width: 250px;
     position: relative;
 }
-.search-icon{
+.search-box > .search-icon{
     position: absolute;
     left: 12px;
     top: 12px;
@@ -93,6 +94,12 @@ a{
 .search-box input::placeholder{
     opacity: .3;
 }
+.search-icon-mobile a i{
+    color: var(--secondary-color)!important;
+}
+.search-icon-mobile{
+    display: none;
+}
 
 /**header middle**/
 .header-menu ul{
@@ -101,7 +108,7 @@ a{
     list-style: none;
 }
 .header-menu ul li a{
-    padding: 10px 40px;
+    padding: 14px 40px;
     border-radius: 10px;
 }
 .header-menu ul li a:hover{
@@ -135,6 +142,7 @@ a{
     display: flex;
     align-items: center;
     column-gap: 8px;
+    padding-bottom: 3px;
 }
 .header-icon{
     width: 40px;
@@ -142,6 +150,7 @@ a{
     background-color: var(--tertiary-bg);
     border-radius: 50%;
     text-align: center;
+    cursor: pointer;
 }
 .header-icon:hover{
     background-color: var(--hover-color);
@@ -161,12 +170,87 @@ a{
     object-fit: cover;
     border-radius: 50%;
 }
+.plus-icon-mobile{
+    display: none;
+}
+
+/*****************Main Area css***************/
+.main-area{
+    background-color: var(--secondary-bg);
+    margin-top: 50px;
+}
+
+/**********Main Left**********/
+.main-left-area{
+    max-width: 350px;
+    height: calc(100vh - 55px);
+    background-color: var(--secondary-bg);
+    padding: 15px 5px 20px 10px;
+    position: fixed;
+    top: 55px;
+    overflow: hidden;
+    overflow-y: scroll;
+
+}
+.main-left-area::-webkit-scrollbar{
+    width: 7px;
+}
+.main-left-area::-webkit-scrollbar-thumb{
+    border-radius: 15px;
+    background-color: var(--secondary-bg);
+}
+.main-left-area:hover::-webkit-scrollbar-thumb{
+    background-color: #cccccc;
+}
+.left-item{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    width: 100%;
+    padding: 10px 5px;
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.left-item:hover{
+    background-color: var(--hover-color);
+}
+.left-item img{
+    width: 40px;
+}
+.left-item .user-image{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.left-item p{
+    color: var(--primary-color);
+    font-size: 14px;
+    font-family: var(--secondary-font);
+}
+.main-left-opt{
+    display: flex;
+    flex-wrap: wrap;
+}
+.main-left-opt a,
+.main-left-opt span{
+    color: var(--secondary-color);
+    font-size: 13px;
+    text-decoration: none;
+}
+.main-left-opt a span:hover{
+    text-decoration: underline;
+}
 
 
-/***********Header Area css**********/
+/**********Main Center**********/
 
 
 
+
+
+/**********Main Right**********/
 
 
 /***********Header Area css**********/
