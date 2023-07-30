@@ -5,11 +5,13 @@
 :root{
     --primary-font: 'Roboto', sans-serif;
     --secondary-font: 'Lato', sans-serif;
+
     --primary-color: #050505;
     --secondary-color: #65676b;
     --tertiary-color: #ffffff;
     --active-color: #1b74e4;
     --hover-color: #e4e4e9;
+
     --primary-bg: #ffffff;
     --secondary-bg: #f0f2f5;
     --tertiary-bg: #e4e6eb;
@@ -36,7 +38,9 @@ img{
 a, span{
     display: inline-block;
 }
-
+button{
+    cursor: pointer;
+}
 
 
 
@@ -247,8 +251,8 @@ a, span{
 
 /**********Main Center**********/
 .main-center-area{
-    max-width: 50%;
-    margin-left: 25%;
+    max-width: 550px;
+    margin: auto;
     margin-top: 70px;
 }
 
@@ -354,12 +358,67 @@ a, span{
 }
 
 /*****Create Post****/
+.create-post{
+    padding: 10px 15px;
+    background: var(--tertiary-color);
+    margin: 20px 0;
+    border-radius: 10px;
+}
 .create-post .top{
     display: flex;
+    justify-content: space-between;
     align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #dddddf;
 }
-
-
+.create-post .top input{
+    width: 90%;
+    height: 40px;
+    outline: none;
+    border: none;
+    color: var(--primary-color);
+    font-size: 16px;
+    border-radius: 30px;
+    padding: 0 15px;
+    background: var(--secondary-bg);
+    font-family: var(--secondary-font);
+}
+.create-post .bottom{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 5px;
+}
+.create-post .bottom button{
+    padding: 10px 0;
+    background: transparent;
+    border: none;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 8px;
+    color: var(--secondary-color);
+    font-size: 14px;
+    font-family: var(--secondary-font);
+    font-weight: 500;
+}
+.create-post .bottom button:hover{
+    background: var(--secondary-bg);
+}
+.create-post .bottom button i{
+    font-size: 20px;
+}
+.create-post .bottom button .live{
+    color: #f02a4b;
+}
+.create-post .bottom button .gallery{
+    color: #46be63;
+}
+.create-post .bottom button .smile{
+    color: #facf6a;
+}
 
 
 /**********Main Right**********/
