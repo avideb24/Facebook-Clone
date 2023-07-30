@@ -7,6 +7,7 @@
     --secondary-font: 'Lato', sans-serif;
     --primary-color: #050505;
     --secondary-color: #65676b;
+    --tertiary-color: #ffffff;
     --active-color: #1b74e4;
     --hover-color: #e4e4e9;
     --primary-bg: #ffffff;
@@ -182,7 +183,7 @@ a, span{
 
 /**********Main Left**********/
 .main-left-area{
-    max-width: 350px;
+    max-width: 23%;
     height: calc(100vh - 55px);
     background-color: var(--secondary-bg);
     padding: 15px 5px 20px 10px;
@@ -245,7 +246,118 @@ a, span{
 
 
 /**********Main Center**********/
+.main-center-area{
+    max-width: 50%;
+    margin-left: 25%;
+    margin-top: 70px;
+}
 
+/****Story Box*****/
+.story-box{
+    width: 100%;
+    height: auto;
+    background-color: var(--primary-bg);
+    padding: 15px 10px;
+    border-radius: 10px;
+    display: flex;
+    column-gap: 15px;
+}
+.my-story,
+.single-story{
+    width: 105px;
+    height: 180px;
+    box-sizing: border-box;
+    overflow: hidden;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    transition: 1s;
+}
+.my-story .story-img{
+    width: 100%;
+    height: 135px;
+    position: relative;
+}
+.my-story .story-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+.my-story .story-img .upload-btn{
+	position: absolute;
+	left: 31px;
+	bottom: -24px;
+}
+.my-story .story-img .upload-btn a img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--primary-bg);
+    border: 3px solid var(--tertiary-color);
+}
+.my-story .story-tag p{
+    color: var(--primary-color);
+    font-size: 12px;
+    font-weight: 500;
+    text-align: center;
+    padding-top: 20px;
+}
+.single-story img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: 0.1s;
+}
+.circle-img{
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    left: 12px;
+    top: 12px;
+}
+.circle-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    border: 4px solid var(--active-color);
+}
+.story-text {
+	color: var(--tertiary-color);
+	font-size: 12px;
+    text-align: center;
+	position: relative;
+	bottom: 22px;
+}
+.single-story::after,
+.my-story::after{
+    content: '';
+    width: 0;
+    height: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.single-story:hover img{
+    transform: scale(1.01);
+}
+
+.single-story:hover::after,
+.my-story:hover::after{
+    width: 100%;
+    height: 100%;
+}
+
+/*****Create Post****/
+.create-post .top{
+    display: flex;
+    align-items: center;
+}
 
 
 
