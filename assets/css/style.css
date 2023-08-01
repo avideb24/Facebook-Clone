@@ -37,6 +37,7 @@ img{
 }
 a, span{
     display: inline-block;
+    text-decoration: none;
 }
 button{
     cursor: pointer;
@@ -251,7 +252,7 @@ button{
 
 /**********Main Center**********/
 .main-center-area{
-    max-width: 550px;
+    max-width: 600px;
     margin: auto;
     margin-top: 70px;
 }
@@ -419,6 +420,140 @@ button{
 .create-post .bottom button .smile{
     color: #facf6a;
 }
+
+/*******Newsfeed******/
+.single-post{
+    padding: 10px 15px;
+    background: var(--tertiary-color);
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+.post-opt{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.post-opt .left{
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+}
+.post-opt .left .user-name a{
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 15px;
+    margin-bottom: 6px;
+}
+.post-opt .left .user-name a:hover{
+    text-decoration: underline;
+}
+.post-opt .left .user-name p{
+    font-size: 12px;
+    color: var(--secondary-color);
+}
+.post-opt .right{
+    display: flex;
+    column-gap: 10px;
+}
+.post-opt .right a{
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    color: var(--secondary-color);
+    font-size: 22px;
+}
+.post-opt .right a:hover{
+    background-color: var(--secondary-bg);
+}
+.post-text p{
+    margin: 10px 0;
+    color: var(--primary-color);
+    font-size: 15px;
+}
+.single-post .center{
+    width: 100%;
+}
+.single-post .center img{
+    width: 100%;
+    height: auto;
+}
+.post-bottom-opt{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.post-react{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding-bottom: 10px;
+    /* border-bottom: 2px solid #dddddf; */
+}
+.post-react .emoji a{
+    width: 20px;
+}
+.post-react .emoji .upper{
+    margin-left: -7px;
+}
+.post-react .emoji a img{
+    width: 100%;
+}
+.react-count a,
+.comment-count a{
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-size: 13px;
+}
+.react-count a:hover,
+.comment-count a:hover{
+    text-decoration: underline;
+}
+.post-btns{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-top: 1px solid #e9e9ee;
+}
+.post-btns a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 0;
+    margin-top: 5px;
+    border-radius: 10px;
+    color: var(--secondary-color);
+}
+.post-btns a:hover{
+    background-color: var(--secondary-bg);
+}
+.post-btns a i{
+    font-size: 20px;
+}
+.load-more-btn{
+    color: var(--tertiary-color);
+    font-size: 14px;
+    font-weight: 600;
+    font-family: var(--secondary-font);
+    background-color: var(--active-color);
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    transition: .3s;
+}
+.newfeed-btn{
+    text-align: center;
+    margin: 25px 0 30px 0;
+}
+.load-more-btn:hover{
+    color: var(--primary-color);
+    background-color: var(--primary-bg);
+}
+
+
+
 
 
 /**********Main Right**********/
