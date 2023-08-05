@@ -194,6 +194,7 @@ button{
     padding: 15px 5px 20px 10px;
     position: fixed;
     top: 55px;
+    left: 5px;
     overflow: hidden;
     overflow-y: scroll;
 
@@ -557,20 +558,79 @@ button{
 
 
 /**********Main Right**********/
+.main-right-area {
+	width: 23%;
+	height: calc(100vh - 55px);
+	background-color: var(--secondary-bg);
+	padding: 15px 5px 20px 10px;
+	position: fixed;
+	top: 55px;
+    right: 5px;
+	overflow: hidden;
+	overflow-y: scroll;
+}
+
+/*******Active Friends Area css**********/
+.active-friends .top{
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+}
+.active-friends .top .icons{
+    display: flex;
+    gap: 5px;
+}
+.active-friends .top .title h2{
+    color: var(--secondary-color);
+    font-size: 17px;
+    font-weight: 500;
+}
+.active-friends-icon{
+    width: 35px;
+    height: 35px;
+    background-color: transparent;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+}
+.active-friends-icon:hover{
+    background-color: var(--hover-color);
+}
+.active-friends-icon a i{
+    color: var(--secondary-color);
+    font-size: 16px;
+    line-height: 35px;
+}
+.active-friends-list{
+    margin-top: 8px;
+    padding-bottom: 8px;
+    border-bottom: 3px solid var(--hover-color);
+}
+.active-friends-list .single-friend{
+    width: 100%;
+    background: transparent;
+    padding: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    transition: .1s;
+}
+.active-friends-list .single-friend:hover{
+    background-color: var(--hover-color);
+}
+.active-friends-list .single-friend .username p{
+    color: var(--primary-color);
+    font-size: 15px;
+}
+.top-group{
+    margin-top: 15px;
+}
 
 
-/***********Header Area css**********/
 
 
-
-
-
-/***********Header Area css**********/
-
-
-
-
-/***********Header Area css**********/
 
 
 
